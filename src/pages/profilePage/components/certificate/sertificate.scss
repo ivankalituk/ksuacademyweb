@@ -1,0 +1,34 @@
+    .profile_sertificate{
+        z-index: 1;
+        min-width: 140px;
+
+        .profile_sertificate_container{
+            padding: 0 0 8px 0;
+            position: relative;
+            .profile_sertificate_img{
+                display: flex;
+                justify-content: center;
+            }
+        
+            .profile_sertificate_content{
+                text-align: center;
+                color: var(--dark, #16325C);
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+            }
+        
+            .profile_sertificate_dekoBlock{
+                border-radius: 16px;
+                background: var(--ultralight_gray, #F1F1F1);
+                width: 140px;
+                height: 88px;
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+            }   
+        }
+    }

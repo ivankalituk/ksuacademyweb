@@ -1,0 +1,149 @@
+.profilePage{
+    margin: 64px 0;
+
+    .profilePage_container{
+        padding: 0 116px;
+        display: flex;
+
+        .firstPart{
+            width: 375px;
+            border-radius: 16px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+
+            .profile_progress{
+                padding: 24px 16px;
+                color: var(--dark, #16325C);
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        .secondPart{
+            margin-left: 40px;
+            flex: 1;
+
+            .profile_profileInfo{
+                border-radius: 16px;
+                background: var(--Accent, #005495);
+
+                display: flex;
+                align-items: center;
+                height: 80px;
+
+                .profile_profileInfo_container{
+                    display: flex;
+                    justify-content: space-between;
+                    flex: 1;
+                    padding: 0  16px;
+                    .profile_profileInfo_account{
+                        display: flex;
+                        align-items: center;
+                        .profile_account{       
+                            margin-left: 8px;
+
+                            a{
+                                margin-left: 4px;
+                            }
+
+                            span{
+                                color: var(--white, #FFF);
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                text-transform: capitalize;
+                            }
+
+                            .profile_account_tag{
+                                color: var(--white, #FFF);
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                text-transform: capitalize;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+
+                    .profile_coursesEnded{
+                        display: flex;
+                        align-items: center;
+
+                        .profile_coursesEnded_num{
+                            color: var(--white, #FFF);
+                            font-family: Montserrat;
+                            font-size: 48px;
+                            font-style: normal;
+                            font-weight: 900;
+                            line-height: normal;
+                            text-transform: capitalize;
+                        }
+
+                        span{
+                            margin-left: 8px;
+                            width: 90px;
+                            color: var(--white, #FFF);
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+
+            .profile_certificates{
+                max-width: 792px;
+                border-radius: 16px;
+                background: var(--white, #FFF);
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+
+                .profile_certificates_container{
+                    margin-top: 24px;
+                    padding: 24px 16px;
+
+                    .profile_certificates_heading{
+                        color: var(--dark, #16325C);
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    .profile_certificates_list{
+                        display: flex;
+                        gap: 16px;
+                        overflow: hidden;
+                        overflow-x: scroll;
+                        white-space:nowrap;
+                    }
+
+                    .profile_certificates_list::-webkit-scrollbar {
+                        width: 0;
+                    }
+                }
+            }
+
+            .profile_createMaterial{
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                border-radius: 16px;
+                border: 4px solid var(--Accent, #005495);
+                background: var(--white, #FFF);
+                text-decoration: none;
+                height: 56px;
+                align-items: center;
+                color: #005495;
+                font-size: 16px;
+            }
+        }
+    }
+}

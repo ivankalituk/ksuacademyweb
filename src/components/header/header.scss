@@ -1,0 +1,100 @@
+header{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    .header_container{
+        height: 64px;
+        padding: 0 116px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F1F1F1;
+
+        .header_logoGroup{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            
+            img{
+                margin-right: 8px;
+            }
+
+            span{
+                text-transform: uppercase;
+                font-weight: 900;
+                color: #16325C;
+                font-size: 13px;
+                width: 72px;
+            }
+
+        }
+
+        .header_searchCourses{
+            display: flex;
+
+            .header_courses{
+                margin-left: 16px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+
+                span{
+                    text-transform: uppercase;
+                    color: #005495;
+                    font-weight: 600;
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        .burgerBtn{
+            display: none;
+            outline: none;
+            border: none;
+            background-color: white;
+
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    header{
+        .header_container{
+            padding: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header{
+        .header_container{
+            padding: 0 10px;
+            justify-content: start;
+
+            .header_logoGroup{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                
+                span{
+                    display: none;
+                }
+            }
+
+            .header_searchCourses{
+                flex: 1;
+                .header_courses{
+                    display: none;
+                }
+            }
+
+            .burgerBtn{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.subjectPage{
+    padding: 0 116px;
+
+    .subjectPage_heading{
+        margin: 64px 0 32px 0;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+        background: linear-gradient(0deg, #16325C 5.11%, #005494 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;       
+    }
+}
+
+@media (max-width:1000px){
+    .subjectPage{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width:700px){
+    .subjectPage{
+        padding: 0 10px;
+    }
+}

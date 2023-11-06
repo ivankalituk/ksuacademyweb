@@ -1,0 +1,128 @@
+.registrationPage{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    .registrationPage_container{
+        width: 645px;
+        display: flex;
+        border-radius: 25px;
+
+        .registration_first{
+            // background: red;
+            img{
+                border-radius: 25px 0px 0px 25px;
+            }
+        }
+
+        .registration_second{
+            max-width: 330px;
+            flex: 1;
+            background-color: #005495;
+            border-radius: 0px 25px 25px 0px;
+
+            .registration_second_container{
+                padding: 16px 16px 32px 16px;
+
+                .registration_logIn{
+
+                    display: none;
+                    .registration_changePas{
+                        display: block;
+                        margin-top: 8px;
+                        color: var(--Green, #60BD46);
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        text-decoration-line: underline;
+                    }
+
+                    .registration_fastLogin{
+                        margin-top: 46px;
+                        display: block;
+                        flex: 1;
+                        height: 48px;
+                        border-radius: 32px;
+                        border: 2px solid var(--light_gray, #CACACC);
+                        background-color: white;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 16px;
+                        gap: 8px;
+                        text-decoration: none;
+
+                        span{
+                            color: var(--dark, #16325C);
+                            font-family: Montserrat;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        .registration_input{
+            margin-top: 16px;
+            height: 40px;
+            background-color: white;
+            border: 2px solid var(--light_gray, #CACACC);
+            border-radius: 16px;
+            display: flex;
+            flex: 1;
+
+            input{
+                outline: none;
+                border: none;
+                width: 80%;
+                font: inherit;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            input::placeholder{
+                color: var(--dark, #16325C);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        .registration_additional{
+            align-self: flex-end;
+            margin-top: 8px;
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            a{
+                color: var(--Green, #60BD46);
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+        }
+
+        .registration_logInJoin_text{
+            color: white;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+    }
+}

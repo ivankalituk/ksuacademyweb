@@ -1,0 +1,84 @@
+.account{
+    .account_nonauthorized{
+        display: flex;
+        // display: none;
+
+        .logIn{
+            background-color: white;
+            text-transform: uppercase;
+            color: #005495;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 8px 16px;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+        
+        .registration{
+            margin-left: 8px;
+            background-color: #005495;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 8px 16px;
+            border-radius: 16px;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+        .logIn:hover{
+            background-color: #CACACC;
+            transition: 0.4s;
+        }
+
+        .registration:hover{
+            background-color: #16325C;
+            transition: 0.4s;
+        }
+    }
+
+    .account_authorized{
+        display: none;
+        width: 148px;
+        position: relative;
+        height: 32px;
+        background-color: #005495;
+        // display: flex;
+        align-items: center;
+        border-radius: 16px;
+
+        span{
+            width: 100px;
+            padding-left: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .account_avatar{
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            border-radius: 15px;
+            right: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+}
+
+@media (max-width: 700px){
+    .account{
+        display: none;
+    }
+}

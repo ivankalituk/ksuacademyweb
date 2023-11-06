@@ -1,0 +1,242 @@
+.mainPage{
+    padding: 24px 116px 80px 116px;
+
+    .mainPage_mainInfo{
+        display: flex;
+        align-items: center;
+        
+        .mainPage_mainInfo_img{
+            flex: 1;
+            min-width: 100px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .mainPage_mainInfo_container{
+            flex: 1;
+            margin-left: 26px;
+
+            div+div{
+                margin-top: 8px;
+            }
+
+            .mainPage_mainInfo_heading{
+                font-size: 36px;
+                font-weight: 900;
+                line-height: normal;
+                text-transform: uppercase;
+                background: var(--main-gradient, linear-gradient(360deg, #16325C 0%, #005494 100%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .mainPage_mainInfo_info{
+                color: #16325C;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .mainPage_mainInfo_buttons{
+                display: flex;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1;
+                    // max-width: 284px;
+                    background-color: #005495;
+                    border-radius: 16px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    transition: 0.4s;
+                }
+
+                a+a{
+                    margin-left: 16px;
+                }
+
+                a:hover{
+                    background-color: #16325C;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+
+    .mainPage_courses{
+        margin-top: 64px;
+
+        .mainPage_courses_heading{
+            color: #005495;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        .mainPage_courses_columns{
+            margin-top: 16px;
+            columns: 2;
+            column-gap: 20px;
+        }
+    }
+
+    .mainPage_secInfo{
+        margin-top: 56px;
+        margin-bottom: 54px;
+
+
+        .mainPage_secInfo_first{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .mainPage_secInfo_firstImg{
+                width: 100%;
+                flex: 1;
+                img{
+                    width: 100%;
+                }
+            }
+
+
+            .mainPage_secInfo_container{
+                flex: 1;
+                max-width: 584px;
+                margin-left: 20px;
+                .mainPage_secInfo_heading{
+                    margin-bottom: 8px;
+                    background: linear-gradient(0deg, #16325C 5.11%, #005494 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-transform: uppercase;
+                }
+
+                .mainPage_secInfo_info{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    color: #16325C;
+                }
+            }
+        }
+
+        .mainPage_secInfo_second{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .mainPage_secInfo_secImg{
+                width: 100%;
+                flex: 1;
+                img{
+                    width: 100%;
+                }
+            }
+
+            .mainPage_secInfo_container{
+                flex: 1;
+                max-width: 584px;
+                margin-right: 20px;
+                .mainPage_secInfo_heading{
+                    margin-bottom: 8px;
+                    background: linear-gradient(0deg, #16325C 5.11%, #005494 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 44px;
+                    text-transform: uppercase;
+                }
+
+                .mainPage_secInfo_info{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    color: #16325C;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:1000px) {
+    .mainPage{
+        padding: 24px 20px 80px 20px;
+
+        .mainPage_mainInfo{
+            display: block;
+
+            .mainPage_mainInfo_container{
+                margin: 10px 0 0 0;
+            }
+        }
+
+        .mainPage_courses{
+            .mainPage_courses_columns{
+                columns: 1;
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .mainPage{
+        padding: 24px 10px 80px 10px;
+
+        .mainPage_mainInfo{
+            display: block;
+
+            .mainPage_mainInfo_container{
+                margin: 10px 0 0 0;
+            }
+        }
+
+        .mainPage_courses{
+            .mainPage_courses_columns{
+                columns: 1;
+            }
+        }
+
+        .mainPage_secInfo{
+            margin-top: 10px;
+            
+            .mainPage_secInfo_first{
+                display: block;
+
+                .mainPage_secInfo_container{
+                    margin: 10px 0;
+                }
+            }
+
+            .mainPage_secInfo_second{
+                flex-direction: column;
+                
+                .mainPage_secInfo_container{
+                    margin: 10px 0;
+                    order: 2;
+                }
+            }
+        }
+    }
+}

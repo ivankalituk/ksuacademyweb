@@ -1,0 +1,117 @@
+footer{
+    background-color: #005495;
+    
+    .footer_container{
+        max-width: 1440px;
+        margin: 0 auto;
+
+        .footer_inner{
+            display: flex;
+            justify-content: space-between;
+            padding: 64px 116px;
+            color: white;
+
+            .footer_mainInfo{
+                flex: 1;
+                .footer_mainInfo_heading{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+
+                    img{
+                        margin-right: 8px;
+                    }
+        
+                    span{
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        color: white;
+                        font-size: 13px;
+                        width: 72px;
+                    }
+                }
+
+                .footer_mainInfo_info{
+                    margin-top: 8px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .footer_links{
+                margin-left: 40px;
+                display: flex;
+                justify-content: space-between;
+                flex: 1;
+
+                .footer_links_mainLinks{
+                    a{
+                        display: block;
+                        margin-bottom: 16px;
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    
+                    a+a{
+                        margin-top: 16px;
+                    }
+                }
+    
+                .footer_themelinks{
+                    .footer_themeLinks_name{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: white;
+                        opacity: 0.5;
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        display: block;
+                        margin-top: 16px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: white;
+                    }
+
+                    a+a{
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    footer{
+        .footer_container{
+            .footer_inner{
+                padding: 20px 20px;
+                display: block;
+                
+                .footer_links{
+                    margin: 20px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    footer{
+        .footer_container{
+            .footer_inner{
+                padding: 20px 10px;
+                display: block;
+            }
+        }
+    }
+}

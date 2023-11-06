@@ -1,0 +1,82 @@
+.coursePage_course{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 16px 16px 16px 16px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+
+    .coursePage_course_container{
+
+        .coursePage_course_header{
+            position: relative;
+            background-color: #F1F1F1;
+            border-radius: 36px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            
+            .coursePage_course_img{
+                top: -4px;
+                left: 0;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 64px;
+                height: 64px;
+                border-radius: 36px;
+                background-color: #14A7A7;
+                border: solid white 4px;
+            }
+
+            .coursePage_course_heading{
+                margin: 0 20px 0 82px;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                display: flex;
+                align-items: center;
+                color: #16325C;
+                flex: 1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+        }
+    }
+
+    .coursePage_course_info{
+        padding: 16px 0 16px 80px;
+        columns: 3;
+        a{
+            display: block;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #16325C;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .coursePage_course{
+        .coursePage_course_info{
+            columns: 2;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .coursePage_course{
+        .coursePage_course_info{
+            columns: 1;
+        }
+    }
+}

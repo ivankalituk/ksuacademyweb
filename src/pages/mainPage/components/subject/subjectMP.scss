@@ -1,0 +1,124 @@
+.mainPage_subjectList_subject{
+    break-inside: avoid;
+    // box-sizing: border-box;
+    margin-bottom: 16px;
+    flex: 1;
+    max-width: 584px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+
+    .courseList_subject_container{
+        padding: 16px;
+
+        .subjectList_subject_heading{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            
+            .subjectList_subject_nameGroup{
+                display: flex;
+                align-items: center;
+                flex: 1;
+
+                .subjectList_subject_img{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 32px;
+                    background-color: #14A7A7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .subjectList_course_name{
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    margin: 0 40px 0 16px;
+                    width: 0px;
+                    flex: 1;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #16325C;
+                    text-transform: uppercase;
+                }
+            }
+
+            .subjectList_subject_checkbox{
+                z-index: 100;
+                position: absolute;
+                top: 19px;
+                right: 0;
+                margin-right: 20px;
+                justify-self: flex-end;
+                
+                // if u need extra space for arrow => delete
+                overflow: hidden;
+
+                .subject_customCheck{
+                    width: 40px;
+                    height: 40px;
+                    z-index: 100;
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    overflow: hidden;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.subject_course_container{
+    padding: 16px 16px 16px 80px;
+    column-count: 2;
+
+    a{
+        margin-bottom: 16px;
+        display: block;
+        text-decoration: none;
+        flex: 1;
+        color: #16325C;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+   }
+}
+
+.subjectList_subject_course{
+    max-height: 100vh;
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.activeCourseList_subject_course{
+    max-height: 0vh;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.subject_arrow{
+    rotate: -180deg;
+    transition: 0.3s;
+}
+
+.activeSubject_arrow{
+    rotate: -360deg;
+    transition: 0.3s;
+}
+
+@media (max-width: 1000px) {
+    .mainPage_subjectList_subject{
+        max-width: none;
+    }
+}
