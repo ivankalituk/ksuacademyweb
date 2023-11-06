@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/ksuacademyweb/static/css/main.3ecff5eb.css",
+    "main.js": "/ksuacademyweb/static/js/main.d9191b2b.js",
+    "static/js/787.8127545e.chunk.js": "/ksuacademyweb/static/js/787.8127545e.chunk.js",
+    "static/media/testCat.svg": "/ksuacademyweb/static/media/testCat.fd000e1d1976b17a3b4cccdf1f838d64.svg",
+    "static/media/universityMainPage.png": "/ksuacademyweb/static/media/universityMainPage.6907b0cd150032dfa79f.png",
+    "static/media/mainPageCat2.png": "/ksuacademyweb/static/media/mainPageCat2.36a2c285c199b4269bb3.png",
+    "static/media/mainPageCat1.png": "/ksuacademyweb/static/media/mainPageCat1.e567af08e572bbc30e4d.png",
+    "static/media/regBanner.png": "/ksuacademyweb/static/media/regBanner.61218215b4ad680d6c39.png",
+    "static/media/sertificateSample.png": "/ksuacademyweb/static/media/sertificateSample.14a0ad9bd3a1adce56fc.png",
+    "static/media/courseSample.svg": "/ksuacademyweb/static/media/courseSample.db2c2d0fe952e738c2066096a407daa7.svg",
+    "static/media/logo.svg": "/ksuacademyweb/static/media/logo.a736a2ae350fdc3c2b4c6b7519944097.svg",
+    "static/media/lectionText.svg": "/ksuacademyweb/static/media/lectionText.725f1ec9ecbeefff69be0eb10e45196b.svg",
+    "static/media/Google.svg": "/ksuacademyweb/static/media/Google.f5820b6eab8546b8092d348e8f6b3865.svg",
+    "static/media/test.svg": "/ksuacademyweb/static/media/test.e9b13cfc5440fbfbdde7fb28f4eb7c36.svg",
+    "index.html": "/ksuacademyweb/index.html",
+    "static/media/lectionVideo.svg": "/ksuacademyweb/static/media/lectionVideo.71fa263da885940c03b32e9d75df80da.svg",
+    "static/media/SearchBtn.svg": "/ksuacademyweb/static/media/SearchBtn.bec6ff3b96da0a27f44a082510ce87f9.svg",
+    "static/media/settings.svg": "/ksuacademyweb/static/media/settings.2aceafea34a39509b0e16861eb1c8b4b.svg",
+    "static/media/burferMenu.svg": "/ksuacademyweb/static/media/burferMenu.fc12fbd678bea2ce4ec9524cbe12a170.svg",
+    "static/media/reginput.svg": "/ksuacademyweb/static/media/reginput.5ade2a86fe57c0413f257c4d1382a234.svg",
+    "static/media/courseArrow.svg": "/ksuacademyweb/static/media/courseArrow.443ef55afb6b44dafbd2d3cb0512d1b5.svg",
+    "static/media/arrowMP1.svg": "/ksuacademyweb/static/media/arrowMP1.291a00a8fb39fb49c79b905f2b0a62a7.svg",
+    "main.3ecff5eb.css.map": "/ksuacademyweb/static/css/main.3ecff5eb.css.map",
+    "main.d9191b2b.js.map": "/ksuacademyweb/static/js/main.d9191b2b.js.map",
+    "787.8127545e.chunk.js.map": "/ksuacademyweb/static/js/787.8127545e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ecff5eb.css",
+    "static/js/main.d9191b2b.js"
+  ]
+}
