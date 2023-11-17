@@ -12,6 +12,9 @@ import axios from "axios"
 
 function MainPage(){
 
+    
+
+
     let [subjects, setSubjects] = useState([]);
 
     let [loading, setLoading] = useState(false);
@@ -26,6 +29,8 @@ function MainPage(){
         fetchData().then((data) => setSubjects(data))
     }, []);
 
+    
+
 
     return(
         <div className="mainPage">
@@ -35,7 +40,7 @@ function MainPage(){
                 </div>
                 <div className="mainPage_mainInfo_container">
                     <div className="mainPage_mainInfo_heading">
-                        Реальні результати для когжного учня
+                        Реальні результати для кожного учня
                     </div>
 
                     <div className="mainPage_mainInfo_info">

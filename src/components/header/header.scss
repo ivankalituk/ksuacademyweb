@@ -1,4 +1,5 @@
 header{
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
     
@@ -59,6 +60,20 @@ header{
             }
         }
     }
+}
+
+.header_courses_list{
+    width: 100%;
+    transition: 1s;
+    max-height: 100vh;
+    position: absolute;
+    background-color: red;
+    overflow: hidden;
+}
+
+.header_courses_listDisabled{
+    transition: 1s;
+    max-height: 0vh;
 }
 
 @media (max-width: 1000px) {

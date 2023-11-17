@@ -1,7 +1,12 @@
 .subjectDevPage{
     padding: 0 116px;
 
+    .subjectDevPage_selector{
+        margin-top: 20px;
+    }
+
     .subjectDevPage_createSubject{
+        margin-top: 20px;
         font-weight: 700;
         display: flex;
         justify-content: center;

@@ -26,6 +26,10 @@ function SubjectDevelopmentCourse(){
                     <Link to='/'>Тема</Link>
                     <Link to='/'>Тема</Link>
                     <Link to='/'>Тема</Link>
+                    <Link to='/'>Тема</Link>
+                    <Link to='/'>Тема</Link>
+                    <Link to='/'>Тема</Link>
+                    <Link to='/'>Тема</Link>
                 </div>
             </div>
         </div>

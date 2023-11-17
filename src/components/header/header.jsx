@@ -7,8 +7,16 @@ import burgerMenu from "../../assets/photos/burferMenu.svg"
 import SearchBar from './components/searchBar/searchBar';
 import Account from './components/account/account';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Header(){
+
+    let [active, setActive] = useState(false)
+
+    let handleClick = ()=>{
+        setActive(!active)
+    }
+
     return(
         <header>
             <div className="header_container">
@@ -21,7 +29,7 @@ function Header(){
                 <div className="header_searchCourses">
                     <SearchBar></SearchBar>
 
-                    <div className="header_courses">
+                    <div className="header_courses" onClick={handleClick}>
                         <span>Курси</span>
                         <img src={arrow} alt="Arrow" />
                     </div>
@@ -32,6 +40,16 @@ function Header(){
                 <button className="burgerBtn">
                     <img src={burgerMenu} alt="burger" />
                 </button>
+            </div>
+
+            <div className={active? "header_courses_list" : "header_courses_list header_courses_listDisabled"}>
+                <ul>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                </ul>
             </div>
         </header>
     )
