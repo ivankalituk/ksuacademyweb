@@ -1,0 +1,45 @@
+.headerSubject{
+    max-width: 720px;
+    width: 100%;
+    margin-bottom: 10px;
+    flex: 1;
+
+    .headerSubject_container{
+        
+        .headerSubject_name{
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 0px;
+            flex: 1;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: #16325C;
+            text-transform: uppercase;
+        }
+
+        .headerSubject_subjects{
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 5px 0 0 10px;
+            columns: 2;
+
+            a{
+                margin-bottom: 16px;
+                display: block;
+                text-decoration: none;
+                flex: 1;
+                color: #16325C;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+}

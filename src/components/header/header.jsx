@@ -6,8 +6,11 @@ import burgerMenu from "../../assets/photos/burferMenu.svg"
 
 import SearchBar from './components/searchBar/searchBar';
 import Account from './components/account/account';
+import HeaderSubject from './components/headerSubject/headerSubject';
+
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function Header(){
 
@@ -16,6 +19,21 @@ function Header(){
     let handleClick = ()=>{
         setActive(!active)
     }
+
+    let [subjects, setSubjects] = useState([]);
+
+    let [loading, setLoading] = useState(false);
+
+    async function fetchData() {
+        setLoading(true)
+        let res = await axios.get('http://localhost:1000/subject').then(({data}) => data).finally(setLoading(false))
+        return res
+      }
+
+    useEffect(() => {
+        fetchData().then((data) => setSubjects(data))
+    }, []);
+
 
     return(
         <header>
@@ -43,13 +61,15 @@ function Header(){
             </div>
 
             <div className={active? "header_courses_list" : "header_courses_list header_courses_listDisabled"}>
-                <ul>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                </ul>
+                    {
+                        loading ? (
+                            (null)
+                        ) : (
+                            subjects.map((item) => (
+                                <HeaderSubject name = {item.name} key = {item.subject_id} id = {item.subject_id}></HeaderSubject>
+                            ))
+                        )
+                    }
             </div>
         </header>
     )

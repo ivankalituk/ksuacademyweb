@@ -12,9 +12,6 @@ import axios from "axios"
 
 function MainPage(){
 
-    
-
-
     let [subjects, setSubjects] = useState([]);
 
     let [loading, setLoading] = useState(false);

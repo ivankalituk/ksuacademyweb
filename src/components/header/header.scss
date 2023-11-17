@@ -64,15 +64,17 @@ header{
 
 .header_courses_list{
     width: 100%;
-    transition: 1s;
+    transition: 0.5s;
     max-height: 100vh;
     position: absolute;
-    background-color: red;
+    background-color: white;
     overflow: hidden;
+    columns: 2;
+    column-gap: 20px;
 }
 
 .header_courses_listDisabled{
-    transition: 1s;
+    transition: 0.3s;
     max-height: 0vh;
 }
 
