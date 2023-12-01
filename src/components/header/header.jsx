@@ -14,6 +14,12 @@ import axios from 'axios';
 
 function Header(){
 
+    let [menuVisible, setMenuVisible] = useState(false)
+
+    let handleBurger= () => {
+        setMenuVisible(!menuVisible)
+    }
+
     let [active, setActive] = useState(false)
 
     let handleClick = ()=>{
@@ -56,7 +62,7 @@ function Header(){
                 <Account></Account>
 
                 <button className="burgerBtn">
-                    <img src={burgerMenu} alt="burger" />
+                    <img src={burgerMenu} alt="burger" onClick={handleBurger}/>
                 </button>
             </div>
 
@@ -66,10 +72,14 @@ function Header(){
                             (null)
                         ) : (
                             subjects.map((item) => (
-                                <HeaderSubject name = {item.name} key = {item.subject_id} id = {item.subject_id}></HeaderSubject>
+                                <HeaderSubject name = {item.name} key = {item.id} id = {item.subject_id}></HeaderSubject>
                             ))
                         )
                     }
+            </div>
+
+            <div className="header_burger">
+
             </div>
         </header>
     )

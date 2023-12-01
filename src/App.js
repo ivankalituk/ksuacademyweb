@@ -26,7 +26,7 @@ function App() {
             <Route path='/registration' Component={RegistrationPage} />
             <Route path='/course/:id/theme/:idr' Component={ThemePage}/>
             <Route path='/SubjectDevelopment' Component={SubjectDevelopmentPage} />
-            <Route path='/SubjectDevelopment/ThemeDevelopment/:id' Component={ThemeDevelopmentPage} />
+            <Route path='/SubjectDevelopment/:ids/ThemeDevelopment/:idt' Component={ThemeDevelopmentPage} />
           </Routes>
         </div>
 

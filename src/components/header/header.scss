@@ -63,6 +63,7 @@ header{
 }
 
 .header_courses_list{
+    z-index: 100;
     width: 100%;
     transition: 0.5s;
     max-height: 100vh;
@@ -74,6 +75,7 @@ header{
 }
 
 .header_courses_listDisabled{
+    z-index: 100;
     transition: 0.3s;
     max-height: 0vh;
 }
