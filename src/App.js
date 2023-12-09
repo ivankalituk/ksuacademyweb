@@ -12,6 +12,7 @@ import RegistrationPage from './pages/registrationPage/registrationPage';
 import ThemePage from './pages/themePage/themePage';
 import SubjectDevelopmentPage from './pages/subjectDvelopmentPage/subjectDevelopmentPage';
 import ThemeDevelopmentPage from './pages/themeDevelopmentPage/themeDevelopmentPage';
+import LectionDevelopmentPage from './pages/lectionDevelopmentPage/lectionDevelopmentPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='/course/:id/theme/:idr' Component={ThemePage}/>
             <Route path='/SubjectDevelopment' Component={SubjectDevelopmentPage} />
             <Route path='/SubjectDevelopment/:ids/ThemeDevelopment/:idt' Component={ThemeDevelopmentPage} />
+            {/* <Route Component={LectionDevelopmentPage}></Route> */}
           </Routes>
         </div>
 

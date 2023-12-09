@@ -47,7 +47,6 @@ function SubjectDevelopmentCourse(props){
                 <div className="subdev_course_header">
                     <div className="subdev_course_img"><img src={courseImg} alt="courseImg" /></div>
                     
-                    {/* CHANGE LINK */}
                     <Link to={`/SubjectDevelopment/${props.subject_id}/ThemeDevelopment/${props.chapter_id}`} className="subdev_course_heading">{props.name}</Link>
 
                     <div className="subdev_course_delete" onClick={handleDeleteChapter}>
@@ -61,7 +60,7 @@ function SubjectDevelopmentCourse(props){
                         null
                     ) : (
                         themes.map((item) => (
-                            <Link to= {`/course/${props.subject_id}/theme/${props.chapter_id}`}>{item.name}</Link>
+                            <Link to= {`/SubjectDevelopment/${props.subject_id}/ThemeDevelopment/${props.chapter_id}`}>{item.name}</Link>
                         ))
                     )}
                 </div>

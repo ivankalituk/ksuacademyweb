@@ -15,20 +15,10 @@ function ChaptrerPage(){
     let [themes, setThemes] = useState([])
     let [loading, setLoading] = useState(false)
 
-    // async function fetchData() {
-    //     setLoading(true)
-    //     let res = await axios.get('http://localhost:1000/theme', {params: {chapter_id: chapter_id}}).then(({data}) => data).finally(setLoading(false))
-    //     return res
-    //   }
-
-    // useEffect( () => {
-    //     fetchData().then((data) => setThemes(data))
-
-    // }, [])
-
     useEffect(() => {
         console.log(id)
     }, [id])
+    
     return(
         <div className="chapterPage">
             {/* <ChapterProgress></ChapterProgress> */}

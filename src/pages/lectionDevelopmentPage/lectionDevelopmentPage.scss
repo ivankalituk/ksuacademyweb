@@ -1,0 +1,20 @@
+.lectionDev{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    .lectionDev_container{
+        padding: 0 116px;
+
+    }
+}
+
+.lectionDev_heading{
+    color: var(--Accent, #005495);
+    margin: 20px 0 5px 0;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}

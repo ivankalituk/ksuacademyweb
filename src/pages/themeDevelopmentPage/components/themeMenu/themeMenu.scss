@@ -1,0 +1,141 @@
+.themeDevMenu{
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 16px;
+
+    .themeDevMenu_container{
+        padding: 32px 16px;
+        .themeDevMenu_container_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h4{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #16325C;
+            }
+
+            .themeDelete{
+                background-color: red;
+                border-radius: 100px;
+                height: 64px;
+                width: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    height: 45px;
+                }
+            }
+        }
+
+        .themeDev_content_container{
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 33px;
+
+            .themeDev_lections{
+                margin-right: 10px;
+                max-width: 100%;
+                min-width: 400px;
+                flex: 1;
+                span{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #16325C;
+                }
+                
+                .lections_container{
+                    margin-top: 16px;
+                    
+                    .themeDev_createLection{
+                        flex: 1;
+                        height: 88px;
+                        background-color: #F1F1F1;
+                        border-radius: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 4px solid var(--Accent, #005495);
+                        color: #005495;
+                        font-weight: 700;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .practice{
+                max-width: 100%;
+                min-width: 400px;
+                flex: 1;
+                span{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #16325C;
+                }
+                .practice_container{
+                    margin-top: 16px;
+
+                    .themeDev_createTest{
+                        margin-top: 8px;
+                        flex: 1;
+                        height: 88px;
+                        background-color: #F1F1F1;
+                        border-radius: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 4px solid var(--Accent, #005495);
+                        color: #005495;
+                        font-weight: 700;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 871px) {
+    .themeDevMenu{
+        .themeDevMenu_container{
+            .themeDev_content_container{
+                .themeDev_lections{
+                    margin: 0;
+                }
+
+                .practice{
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .themeDevMenu{
+        .themeDevMenu_container{
+            .themeDev_content_container{
+                .themeDev_lections{
+                    margin: 0;
+                    min-width: 200px;
+                }
+
+                .practice{
+                    min-width: 200px;
+                }
+            }
+        }
+    }
+}

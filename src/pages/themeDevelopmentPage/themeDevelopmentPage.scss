@@ -1,0 +1,67 @@
+.themeDev_content{
+    max-width: 1440px;
+    margin: 32px auto 36px auto;
+
+    .themeDev_content_container{
+        padding: 0 116px;
+
+        .themeDev_content_addTheme{
+            display: flex;
+            align-items: center;
+            
+            input{
+                flex: 1;
+                height: 40px;
+                margin-right: 10px;
+                background-color: #F1F1F1;
+                outline: none;
+                border: none;
+                font: inherit;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                border-radius: 5px;
+            }
+    
+            .subjectDevPage_createBtn{
+                flex: 1;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                border-radius: 16px;
+                border: 4px solid var(--Accent, #005495);
+                background: var(--white, #FFF);
+                text-decoration: none;
+                height: 56px;
+                align-items: center;
+                color: #005495;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .themeDev_content{
+        max-width: 1440px;
+        margin: 0 auto;
+    
+        .themeDev_content_container{
+            padding: 0 20px;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .conthemeDev_contenttent{
+        max-width: 1440px;
+        margin: 0 auto;
+    
+        .themeDev_content_container{
+            padding: 0 10px;
+        }
+    }
+}
